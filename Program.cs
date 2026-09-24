@@ -39,5 +39,7 @@ app.MapGet("/api/polleria",() =>
     });
 });
 
+app.Run();
+
 var port = Environment.GetEnvironmentVariable("Port")??"10000",
 app.Run($"http://0.0.0.0:{port}");
